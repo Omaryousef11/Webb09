@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>titel</title>
+  <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+      <a href="index.html">Välkommen</a>
+      <a href="hitta.html">Hitta till hotellet</a>
+      <a href="boka.html">Boka</a>
+      <a href="kontakta.html">Kontakta</a>
+      <img id="logo" src="logo.png" alt="hotllets logo">
+    </nav>
+  <h1>Boka ett rum</h1>
+
+
+<aside id="boka">
+  <div class="container">
+  <form action="action_page.php">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="pnumber">Person number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="pnumber" name="pesonnumber" placeholder="Person number..">
+        </div>
+
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="sweden">Sweden</option>
+          <option value="denmark">Denmark</option>
+          <option value="finland">Finland</option>
+          <option value="germany">Germany</option>
+          <option value="france">France</option>
+          <option value="spain">Spain</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</aside>
+
+<header>
+  <!-- Slideshow container -->
+  <div id="slideshow-conteiner" class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div id="rum1" class="mySlides fade">
+      <img src="hotellrum.jpg" alt="rum1" style="width:100%;">
+    </div>
+
+    <div id="rum2" class="mySlides fade">
+      <img src="rum2.jpeg" alt="rum2" style="width:100%;">
+    </div>
+
+    <div id="rum3" class="mySlides fade">
+      <img src="rum3.jpeg" alt="rum 3" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</header>
+
+  <footer>
+      <p>070 123 45 67 | utbomayou1@skola.malmo.se | Åsa Skogström Feldt, 216 41 Limhamn</p>
+
+    </footer>
+<script src="script-nav.js"></script>
+</body>
+
+</html>
